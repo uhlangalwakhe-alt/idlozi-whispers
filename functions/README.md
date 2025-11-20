@@ -1,0 +1,1 @@
+Place serverless functions here for Stripe/PayFast webhooks or checkout sessions. Add secrets in Netlify UI.

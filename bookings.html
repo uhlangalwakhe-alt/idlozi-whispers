@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="description" content="iDlozi Whispers — Ancestral guidance, dream decoding & spiritual alignment." />
+<link rel="icon" href="/assets/logo.png" />
+<link rel="stylesheet" href="/styles.css" />
+<title>iDlozi Whispers</title>
+
+<title>Bookings - iDlozi Whispers</title>
+</head>
+<body>
+<header class="container header">
+  <div class="logo"><img src="/assets/logo.png" alt="iDlozi Whispers logo"></div>
+  <div>
+    <h1 class="site-title">Bookings</h1>
+    <p class="site-sub">Secure a reading or consultation</p>
+  </div>
+  <nav class="nav" role="navigation">
+    <a href="/index.html">Home</a>
+    <a href="/services.html">Services</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="card" aria-labelledby="book-title">
+    <h2 id="book-title" class="section-title">Book a reading</h2>
+    <p>Choose a service and use the form to request a booking. Payment integration (Stripe/PayFast) is scaffolded in the README.</p>
+
+    <form onsubmit="submitContact(event)" aria-label="Booking form">
+      <div class="form-row"><label>Name<input name="name" required></label></div>
+      <div class="form-row"><label>Email<input name="email" type="email" required></label></div>
+      <div class="form-row"><label>Service
+        <select name="service">
+          <option>Dream decoding (30min)</option>
+          <option>Ancestor alignment (60min)</option>
+          <option>Custom ritual plan</option>
+        </select>
+      </label></div>
+      <div class="form-row"><label>Preferred date<input name="date" type="date"></label></div>
+      <div class="form-row"><label>Notes<textarea name="notes" rows="4"></textarea></label></div>
+      <button type="submit">Request booking</button>
+    </form>
+    <p style="margin-top:12px;color:var(--muted)">Note: Stripe Checkout & PayFast functions are prepared in /functions and README shows how to add keys.</p>
+  </section>
+</main>
+
+<footer class="container footer">
+  <p>© 2025 iDlozi Whispers</p>
+</footer>
+<script src="/scripts.js"></script>
+</body>
+</html>
